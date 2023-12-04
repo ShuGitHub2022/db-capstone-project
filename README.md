@@ -7,3 +7,17 @@ Little lemon need to set up a booking system to keep track of which guests are v
     Record all changes made within the system as they are implemented.  
     Allow other to view, review and add to my code.
 
+How to use Git to set up a repository:
+Initialize the repo using:
+
+    git init
+Create a readme.md file 
+
+    git add readme.md
+because I created readme.md file directly in GitHub, so I skipped this step.
+Verify the remote URL:
+
+    git remote -v
+Push my repository:
+
+    git push -u origin master
