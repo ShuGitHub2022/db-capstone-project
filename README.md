@@ -15,9 +15,19 @@ Create a readme.md file
 
     git add readme.md
 because I created readme.md file directly in GitHub, so I skipped this step.
+
+Next, point the directory toward my git repository by using the git remote add command along with the destination URL. 
+To get the destination URL select the code icon in the repo and copy the HTTPS address.
+
+    git remote add origin https://github.com/ShuGitHub2022/db-capstone-project.git
 Verify the remote URL:
 
     git remote -v
+    
 Push my repository:
 
     git push -u origin master
+
+NotE when commit change we need to config user.email to connect to the GitHub account
+
+    git config --global user.email "user email address"
