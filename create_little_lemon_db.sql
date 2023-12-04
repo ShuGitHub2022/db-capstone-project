@@ -168,12 +168,12 @@ CREATE TABLE IF NOT EXISTS `little_lemon_db`.`Orders` (
   CONSTRAINT `order_menu_fk`
     FOREIGN KEY (`menuID`)
     REFERENCES `little_lemon_db`.`Menu` (`menuID`)
-    ON DELETE NO ACTION
+    ON DELETE CASCADE
     ON UPDATE NO ACTION,
   CONSTRAINT `order_delivery_fk`
     FOREIGN KEY (`delivery_id`)
     REFERENCES `little_lemon_db`.`Order_delivery` (`order_deliveryID`)
-    ON DELETE NO ACTION
+    ON DELETE CASCADE
     ON UPDATE NO ACTION,
   CONSTRAINT `order_customer_fk`
     FOREIGN KEY (`customerID`)
