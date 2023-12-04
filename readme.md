@@ -33,7 +33,7 @@ Push my repository:
 
 Note when commit change we need to config user.email to connect to the GitHub account
 
-    git config --global user.email "user email address"
+git config --global user.email "user email address"
 
 After push change to the repository, I can see the updated readme.md file in the master branch in my repository.
 
@@ -48,4 +48,27 @@ Create an instance of a MySQL server. This can be done in the MySQL workbench ho
 Use connections option to load, configure, group and view information about each of my MySQL connections. Select "Users and Privileges" user the "Management" menu to view a list of current database users.
 
 Use MySQL connection to begin working with database schemas and SQL queries.
+
+Now it's time to build and manage the database. 
+
+Create a new branch on local repository
+
+    git checkout –B branchA
+a new branch branchA was created and switched to the new branch.
+
+Add the project folder to the stage:
+
+    git add . # add all files 
+
+Check the status:
+
+    get status
+
+Commit the changes:
+
+    git commit -u origin branchA
+
+Push the changes to the GitHub repository
+
+    git push -u origin branchA
 
