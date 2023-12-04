@@ -8,7 +8,9 @@ Little lemon need to set up a booking system to keep track of which guests are v
     Allow other to view, review and add to my code.
 
 How to use Git to set up a repository:
-Initialize the repo using:
+Create a new repository in my GitHub account, and name it db-capstone-project. 
+
+Initialize the repo using in my local project directory.
 
     git init
 Create a readme.md file 
@@ -32,5 +34,6 @@ Note when commit change we need to config user.email to connect to the GitHub ac
 
 git config --global user.email "user email address"
 
-END
+After push change to the repository, I can see the updated readme.md file in the master branch in my repository.
+After set up Git repository
 
