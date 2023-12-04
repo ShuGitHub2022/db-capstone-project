@@ -8,6 +8,7 @@ Little lemon need to set up a booking system to keep track of which guests are v
     Allow other to view, review and add to my code.
 
 How to use Git to set up a repository:
+
 Create a new repository in my GitHub account, and name it db-capstone-project. 
 
 Initialize the repo using in my local project directory.
@@ -35,5 +36,16 @@ Note when commit change we need to config user.email to connect to the GitHub ac
 git config --global user.email "user email address"
 
 After push change to the repository, I can see the updated readme.md file in the master branch in my repository.
-After set up Git repository
+
+After set up Git repository, it's time to set up database in MySQL Workbench. 
+
+Database Setup
+
+Create a new user. This is the most secure way to connect to MySQL database, as I can manage user roles and priviliges.
+
+Create an instance of a MySQL server. This can be done in the MySQL workbench home screen. In the home screen side panel, select MySQL connections option to view or create instances of MySQL.
+
+Use connections option to load, configure, group and view information about each of my MySQL connections. Select "Users and Privileges" user the "Management" menu to view a list of current database users.
+
+Use MySQL connection to begin working with database schemas and SQL queries.
 
