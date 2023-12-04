@@ -28,6 +28,6 @@ Push my repository:
 
     git push -u origin master
 
-NotE when commit change we need to config user.email to connect to the GitHub account
+Note when commit change we need to config user.email to connect to the GitHub account
 
     git config --global user.email "user email address"
