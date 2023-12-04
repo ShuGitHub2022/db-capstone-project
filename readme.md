@@ -33,7 +33,7 @@ Push my repository:
 
 Note when commit change we need to config user.email to connect to the GitHub account
 
-git config --global user.email "user email address"
+    git config --global user.email "user email address"
 
 After push change to the repository, I can see the updated readme.md file in the master branch in my repository.
 
