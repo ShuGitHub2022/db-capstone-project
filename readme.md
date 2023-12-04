@@ -27,3 +27,8 @@ Verify the remote URL:
 Push my repository:
 
     git push -u origin master
+
+Note when commit change we need to config user.email to connect to the GitHub account
+
+git config --global user.email "user email address"
+
