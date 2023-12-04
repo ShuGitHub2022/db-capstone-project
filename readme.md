@@ -76,9 +76,9 @@ Now the repository page should display the Compare & pull request button, press 
 
 After this, it's time to update the main branch by completing the following steps:
 
-    git checkout main
+    git checkout master
 Update the main branch
 
     git pull
-
+after updated master branch, branchA can be deleted safely. 
 
