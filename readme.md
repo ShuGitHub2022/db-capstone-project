@@ -72,3 +72,13 @@ Push the changes to the GitHub repository
 
     git push -u origin branchA
 
+Now the repository page should display the Compare & pull request button, press it. On the repository page, I'll see the changes committed, and the Create pull request button. Review the changes and confirm by pressing the Merge pull request button. 
+
+After this, it's time to update the main branch by completing the following steps:
+
+    git checkout main
+Update the main branch
+
+    git pull
+
+
