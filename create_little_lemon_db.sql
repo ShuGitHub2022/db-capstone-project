@@ -33,22 +33,6 @@ ENGINE = InnoDB;
 
 
 -- -----------------------------------------------------
--- Table `little_lemon_db`.`Customers`
--- -----------------------------------------------------
-DROP TABLE IF EXISTS `little_lemon_db`.`Customers` ;
-
-CREATE TABLE IF NOT EXISTS `little_lemon_db`.`Customers` (
-  `customerID` INT NOT NULL AUTO_INCREMENT,
-  `customerFirstName` VARCHAR(45) NOT NULL,
-  `customerLastName` VARCHAR(45) NOT NULL,
-  `contactNumber` VARCHAR(45) NOT NULL,
-  `Email` VARCHAR(45) NULL,
-  `Address` VARCHAR(255) NULL,
-  PRIMARY KEY (`customerID`))
-ENGINE = InnoDB;
-
-
--- -----------------------------------------------------
 -- Table `little_lemon_db`.`Bookings`
 -- -----------------------------------------------------
 DROP TABLE IF EXISTS `little_lemon_db`.`Bookings` ;
@@ -56,22 +40,15 @@ DROP TABLE IF EXISTS `little_lemon_db`.`Bookings` ;
 CREATE TABLE IF NOT EXISTS `little_lemon_db`.`Bookings` (
   `bookingID` INT NOT NULL AUTO_INCREMENT,
   `bookingDate` DATE NOT NULL,
-  `customerID` INT NOT NULL,
   `staffID` INT NOT NULL,
   `bookingslot` TIME NOT NULL,
   `tableNo` INT NOT NULL,
   `comment` VARCHAR(255) NULL,
   PRIMARY KEY (`bookingID`),
   INDEX `booking_staff_fk_idx` (`staffID` ASC) VISIBLE,
-  INDEX `booking_customer.fk_idx` (`customerID` ASC) VISIBLE,
   CONSTRAINT `booking_staff_fk`
     FOREIGN KEY (`staffID`)
     REFERENCES `little_lemon_db`.`Staff` (`staffID`)
-    ON DELETE NO ACTION
-    ON UPDATE NO ACTION,
-  CONSTRAINT `booking_customer.fk`
-    FOREIGN KEY (`customerID`)
-    REFERENCES `little_lemon_db`.`Customers` (`customerID`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
 ENGINE = InnoDB;
@@ -125,6 +102,22 @@ CREATE TABLE IF NOT EXISTS `little_lemon_db`.`Order_delivery` (
   `address` VARCHAR(255) NOT NULL,
   `comment` VARCHAR(255) NULL,
   PRIMARY KEY (`order_deliveryID`))
+ENGINE = InnoDB;
+
+
+-- -----------------------------------------------------
+-- Table `little_lemon_db`.`Customers`
+-- -----------------------------------------------------
+DROP TABLE IF EXISTS `little_lemon_db`.`Customers` ;
+
+CREATE TABLE IF NOT EXISTS `little_lemon_db`.`Customers` (
+  `customerID` INT NOT NULL AUTO_INCREMENT,
+  `customerFirstName` VARCHAR(45) NOT NULL,
+  `customerLastName` VARCHAR(45) NOT NULL,
+  `contactNumber` VARCHAR(45) NOT NULL,
+  `Email` VARCHAR(45) NULL,
+  `Address` VARCHAR(255) NULL,
+  PRIMARY KEY (`customerID`))
 ENGINE = InnoDB;
 
 
